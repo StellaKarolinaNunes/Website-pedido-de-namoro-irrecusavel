@@ -41,7 +41,7 @@
   </p>
   
  Posso gerar meu próprio guia usando esse repositório ?  
- **R:** Sim! Só pedimos que você faça um link para [Link do Website-pedido-de-namoro-irrecusavel](https://github.com/StellaKarolinaNunes/Pedido-de-namoro/)  😁 e respeite a licença de uso.
+ **R:** Sim! Só pedimos que você faça um link para [Link do Website-pedido-de-namoro-irrecusavel](https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel/edit/main/README.md)  😁 e respeite a licença de uso.
 
 ## Funcionalidades
 
@@ -62,7 +62,7 @@
 
 ## **Link Projeto online**
 
-> **click imagem** <a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/" target="_blank"> <img src="https://github.com/StellaKarolinaNunes/Projeto_Integrador_Handhelp/assets/118007989/2373027a-365f-4463-83c4-b84258d97d80" width="300" alt="Pedido de namoro virtual 🤝"> </a>
+> **click imagem** <a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/" target="_blank"> <img src="https://github.com/StellaKarolinaNunes/Projeto_Integrador_Handhelp/assets/118007989/2373027a-365f-4463-83c4-b84258d97d80" width="300" alt="Website-pedido-de-namoro-irrecusavel 🤝"> </a>
 
 ## Posso sugerir novas funcionalidades?
 
