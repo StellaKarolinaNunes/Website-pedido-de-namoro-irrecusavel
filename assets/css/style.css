@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background: #ffb6c1;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #030001, #ffafbd, #ffc3a0);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 192, 203, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 2.6em;
+  color: #d5006d;
+  margin: 15px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.love-question {
+  width: 278px;
+  position: relative;
+  font-size: 40px;
+  display: inline-block;
+  font-family: Dwight;
+  color: #000;
+  text-align: center;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid #d5006d;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin: 0 10px;
+}
+
+button.yes-button {
+  background-color: #dc2960;
+}
+
+button.no-button {
+  background-color: #f5f5f5;
+  color: #1c050c;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 1000;
+  display: none;
+  overflow: hidden;
+}
+
+.popup-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.back-arrow {
+  font-size: 24px;
+  color: #1c050c;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.promo-text {
+  font-size: 30px;
+  font-family: "Abril Fatface";
+  font-weight: bold;
+  text-align: center;
+  color: #dc2960;
+}
+
+.popup-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 16px 8px;
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+  font-family: Dwight;
+}
+
+.popup-icon {
+  width: 21px;
+  position: relative;
+  height: 19px;
+}
+
+.popup-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-text-item {
+  font-size: 16px;
+  color: #1c050c;
+  position: relative;
+}
+
+.pricing-options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: Dwight;
+}
+
+.annual-plan {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #000;
+  height: 88px;
+  overflow: hidden;
+  color: #fff;
+  padding: 10px;
+}
+
+.monthly-plan {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #e9dde0;
+  height: 88px;
+  overflow: hidden;
+  color: #000;
+  padding: 10px;
+}
+
+.annual-amount {
+  font-weight: bold;
+}
+
+.monthly-cost,
+.monthly-offer {
+  opacity: 0.75;
+}
+
+.button-container-yes {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.yes {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 0;
+  border-radius: 16px;
+  background-color: #ff2f6f;
+  color: #fff;
+  font-size: 18px;
+  font-family: Dwight;
+  box-shadow: inset -4px -6px 6px #dc2960, inset 4px 6px 6px #ff347b,
+    0px 14px 29px rgba(51, 9, 22, 0.2);
+  cursor: pointer;
+  text-align: center;
+}
+
+.texto {
+  width: 100%;
+  font-size: 18px;
+  font-family: Dwight;
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+}
