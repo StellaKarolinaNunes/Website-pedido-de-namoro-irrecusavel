@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Abril+Fatface&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:wght@700;800;900&display=swap');
+
+:root {
+    --bg-dark: #120e10;
+    --bg-peach: #fca98f;
+    --card-bg: rgba(255, 255, 255, 0.75);
+    --text-dark: #333333;
+    --text-gray: #666666;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Outfit', sans-serif;
+    --primary-pink: #e93d6d;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-*::selection {
-    background: #ffb6c1;
-    color: #fff;
 }
 
 body {
@@ -17,80 +22,71 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #030001, #ffafbd, #ffc3a0);
-    padding: 20px;
-    overflow-x: hidden;
+    background: linear-gradient(110deg, var(--bg-dark) 0%, #1a1012 30%, var(--bg-peach) 100%);
+    font-family: var(--font-sans);
+    overflow: hidden;
+    padding: 1.5rem;
 }
 
-.container {
+.hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    animation: floatUp 15s linear infinite;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.success-card {
     position: relative;
+    z-index: 10;
+    background: var(--card-bg);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     width: 100%;
     max-width: 650px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 40px;
-    padding: 60px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 4.5rem 2.8rem;
+    border-radius: 50px;
     text-align: center;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    animation: fadeIn 1s ease-out;
+    box-shadow: 0 45px 110px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    animation: cardEntry 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-
-
-.title {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 70px;
-    color: #dc2960;
-    margin-bottom: 10px;
-    line-height: 1;
-}
-
-.subtitle {
-    font-size: 24px;
-    color: #1c050c;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.quote {
-    font-family: 'Dancing Script', cursive;
-    font-size: 28px;
-    color: #d5006d;
-    margin-bottom: 30px;
-    padding: 0 20px;
-    position: relative;
-}
-
-.quote::before,
-.quote::after {
-    content: '"';
-    font-size: 40px;
-    opacity: 0.3;
-}
-
-.message-text {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 25px;
-    max-width: 500px;
-}
-
-.final-word {
-    font-size: 26px;
-    font-weight: 600;
-    color: #dc2960;
-    margin-top: 10px;
-}
-
-@keyframes fadeIn {
+@keyframes cardEntry {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(50px);
     }
 
     to {
@@ -99,24 +95,184 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 40px 20px;
+.card-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 600 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23fca98f' stroke-width='0.5' fill='none' opacity='0.7'%3E%3Cg transform='translate(20, 20) rotate(-10)'%3E%3Cpath d='M40 30 C 40 10, 10 10, 10 30 C 10 50, 40 70, 40 90 C 40 70, 70 50, 70 30'/%3E%3C/g%3E%3Cg transform='translate(520, 20) rotate(15)'%3E%3Cpath d='M40 30 C 40 10, 10 10, 10 30 C 10 50, 40 70, 40 90'/%3E%3C/g%3E%3Cg transform='translate(30, 280) rotate(5)'%3E%3Cpath d='M40 30 C 40 10, 10 10, 10 30 C 10 50, 40 70, 40 90'/%3E%3C/g%3E%3Cg transform='translate(530, 280) rotate(-10)'%3E%3Cpath d='M40 30 C 40 10, 10 10, 10 30'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.success-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hearts-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.heart-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, rgba(233, 61, 109, 0.35) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(15px);
+    animation: glowPulse 3s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: translate(-50%, -50%) scale(1);
     }
 
-    .title {
-        font-size: 50px;
+    50% {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+.success-hearts-svg {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 10px 25px rgba(196, 26, 74, 0.25));
+    animation: floatHearts 4s infinite ease-in-out;
+}
+
+@keyframes floatHearts {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
 
-    .subtitle {
-        font-size: 20px;
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.success-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 8vw, 3.2rem);
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+}
+
+.romantic-message {
+    margin-bottom: 3.5rem;
+    padding: 0 1rem;
+}
+
+.romantic-message p {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+}
+
+.romantic-message .highlight {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.romantic-message .signature {
+    font-family: var(--font-serif);
+    font-size: 1.7rem;
+    color: #c41a4a;
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+.title-heart {
+    color: #e93d6d;
+    display: inline-block;
+    animation: heartBeat 1.5s infinite;
+}
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+        transform: scale(1);
     }
 
-    .quote {
-        font-size: 22px;
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-action {
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    background: #dbdbdb;
+    color: #666;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.btn-action:hover {
+    background: #d4d4d4;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+}
+
+@media (max-width: 500px) {
+    .success-card {
+        padding: 3.5rem 1.5rem;
     }
 
-    .message-text {
-        font-size: 16px;
+    .success-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-action {
+        width: 100%;
+        justify-content: center;
     }
 }

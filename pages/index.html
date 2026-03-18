@@ -6,64 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="../assets/image/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <title>Te amo</title>
+  <title>Oi, meu amor! ✨</title>
 </head>
 
 <body>
-  <div class="main-container">
-    <br>
-    <br>
-    <h2>💞</h2>
-    <h2 class="love-question">Aceita namorar comigo?</h2>
-    <div class="button-container">
-      <button class="yes-button">Sim</button>
-      <button class="no-button">Não</button>
+  <!-- Heart Particles Container -->
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <main class="proposal-card">
+    <div class="card-pattern"></div>
+
+    <div class="header-icons">
+      <div class="dual-hearts">
+        <!-- Main Heart Layered -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart-svg main-heart">
+          <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            fill="url(#main-grad)" filter="url(#softGlow)" />
+          <defs>
+            <linearGradient id="main-grad" x1="2" y1="3" x2="22" y2="21.35">
+              <stop offset="0%" stop-color="#ff4e7e" />
+              <stop offset="100%" stop-color="#c41a4a" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <!-- Sub Heart -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart-svg sub-heart">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            fill="url(#sub-grad)" />
+          <defs>
+            <linearGradient id="sub-grad" x1="2" y1="3" x2="22" y2="21.35">
+              <stop offset="0%" stop-color="#ff9aaf" />
+              <stop offset="100%" stop-color="#e93d6d" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <div class="content">
+      <p class="subheader">Meu Amor,</p>
+      <h1 class="main-title">Aceita namorar<br>comigo?</h1>
+
+      <div class="button-container">
+        <button class="btn-yes" id="yesBtn">
+          Sim
+          <div class="heart-mini-full">❤</div>
+        </button>
+        <button class="btn-maybe" id="noBtn">
+          não
+          <svg class="heart-outline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.1 18.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+              stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </button>
+      </div>
+
+      <p class="footer-note">Com todo o meu amor.</p>
+    </div>
+  </main>
+
+  <!-- Valentine Plus Popup -->
+  <div class="popup-overlay" id="noPopup">
+    <div class="popup-plus">
+      <div class="popup-header">
+        <span class="back-arrow" onclick="closePopup()">←</span>
+        <h2 class="plus-title">Experimente o Valentine Plus hoje!</h2>
+      </div>
+
+      <ul class="plus-features">
+        <li><span class="check">✔</span> Desbloqueie a experiência completa</li>
+        <li><span class="check">✔</span> 1 crédito para usar o botão "Não"</li>
+        <li><span class="check">✔</span> Navegação sem ADS</li>
+      </ul>
+
+      <div class="plus-plans">
+        <div class="plus-plan plan-black">
+          <div class="badge">MELHOR OFERTA</div>
+          <div class="plan-price">$170k criptomoedas</div>
+          <div class="plan-duration">por 1 mês</div>
+        </div>
+        <div class="plus-plan plan-pink">
+          <div class="plan-price">$150 criptomoedas</div>
+          <div class="plan-duration">Por 7 dias !</div>
+        </div>
+      </div>
+
+      <div class="plus-actions">
+        <button class="btn-plus" onclick="location.href='erro.html'">ASSINAR AGORA</button>
+        <p class="plus-footer-text">Ou economize suas moedas e apenas diga...</p>
+        <button class="btn-plus" onclick="location.href='teamo.html'">SIM, EU ACEITO!</button>
+      </div>
     </div>
   </div>
-  <div class="popup" style="display: none">
-    <div class="popup-content">
-      <div class="popup-header">
-        <div class="back-arrow" onclick="closePopup()">←</div>
-        <div class="promo-text">Experimente o Valentine Plus hoje!</div>
-      </div>
-      <div class="popup-details">
-        <img class="popup-icon" alt="" src="../assets/image/Frame 10.svg" />
-        <div class="popup-text-item">Desbloqueie a experiência completa</div>
 
-        <div class="popup-details">
-          <img class="popup-icon" alt="" src="../assets/image/Frame 10.svg" />
-          <div class="popup-text-item">1 crédito para usar o botão “Não”</div>
-        </div>
-        <div class="popup-details">
-          <img class="popup-icon" alt="" src="../assets/image/Frame 10.svg" />
-          <div class="popup-text-item">Navegação sem ADS</div>
-        </div>
-      </div>
-
-      <div class="pricing-options">
-        <div class="annual-plan">
-          <div class="best-offer-badge">Melhor Oferta</div>
-          <b class="annual-amount">$170k criptomoedas</b>
-          <div class="monthly-cost">por 1 mês dias</div>
-        </div>
-        <div class="monthly-plan">
-          <b class="monthly-amount">$150 criptomoedas</b>
-          <div class="monthly-offer">Por 7 dias !</div>
-        </div>
-      </div>
-
-      <div class="button-container-yes">
-        <button class="yes unlock-button">Desbloquear Agora</button>
-      </div>
-
-      <div class="texto">Ou apenas diga sim..</div>
-      <div class="button-container-yes">
-        <button class="yes" onclick="redirectToPage()">YES</button>
-      </div>
-
-    </div>
-
-    <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

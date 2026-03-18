@@ -3,7 +3,7 @@
     <br />
     <br />
   <a href="https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel">
-     <img src="https://github.com/user-attachments/assets/23da5a42-9728-4c46-bf89-b37ce2affeef " alt="Pedido de Namoro Irrecusável Banner " width="100%">
+     <img src="./assets/image/tela_principal.png " alt="Pedido de Namoro Irrecusável Banner " width="100%">
     </a>
   </h1>
 
