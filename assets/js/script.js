@@ -1,4 +1,4 @@
-// Heart Particle Generator
+
 function createHearts() {
   const container = document.getElementById('hearts-container');
   if (!container) return;
@@ -36,7 +36,6 @@ function createHeart(container) {
   }, (duration + delay) * 1000);
 }
 
-// Global Popup Functions for clarity
 window.openPopup = () => {
   const noPopup = document.getElementById('noPopup');
   if (noPopup) noPopup.classList.add('active');
@@ -47,25 +46,25 @@ window.closePopup = () => {
   if (noPopup) noPopup.classList.remove('active');
 };
 
-// Main DOM Content Loaded Logic
+
 document.addEventListener('DOMContentLoaded', () => {
   const yesBtn = document.getElementById('yesBtn');
   const noBtn = document.getElementById('noBtn');
   const noPopup = document.getElementById('noPopup');
 
-  // Start heart animation
+ 
   createHearts();
 
-  // Yes Button Action
+ 
   if (yesBtn) {
     yesBtn.addEventListener('click', () => {
       window.location.href = 'teamo.html';
     });
   }
 
-  // Maybe/No Button Action (Fleeing and Popup)
+ 
   if (noBtn) {
-    /*
+
     noBtn.addEventListener('mouseover', () => {
       const maxX = window.innerWidth - noBtn.clientWidth;
       const maxY = window.innerHeight - noBtn.clientHeight;
@@ -78,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       noBtn.style.top = `${randomY}px`;
       noBtn.style.zIndex = '1000';
     });
-    */
+
 
     noBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -86,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Close popup logic
+ 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') window.closePopup();
   });
