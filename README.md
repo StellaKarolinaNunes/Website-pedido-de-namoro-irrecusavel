@@ -58,17 +58,23 @@ A solução consiste em uma interface web lúdica que utiliza JavaScript para cr
 .
 ├── assets                      # Arquivos de mídia e estilos
 │   ├── css                     # Arquivos de estilos
+│   │   ├── base.css            # Estilos base
 │   │   ├── erro.css            # Estilos da página de erro
 │   │   ├── style.css           # Estilos da página principal
 │   │   └── teamo.css           # Estilos da página de sucesso
 │   ├── image                   # Arquivos de imagens
-│   │   ├── bug-outline.svg     # Ícone de bug
-│   │   ├── cat.png             # Imagem de gato
 │   │   ├── deploy.png          # Imagem de deploy
 │   │   ├── favicon.ico         # Ícone do site
 │   │   ├── Frame 10.svg        # Ícone de frame
-│   │   └── love3.png           # Imagem de amor
+│   │   ├── love3.png           # Imagem de amor
+│   │   └── tela_erro.png       # Imagem da página de erro
+│   │   └── tela_nao.png        # Imagem da página de não
+│   │   └── tela_sim.png        # Imagem da página de sim
+│   │   └── tela_principal.png  # Imagem da página principal
 │   └── js                      # Arquivos de JavaScript
+│       └── modules             # Módulos de JavaScript
+│           └── heart.js        # Módulo de coração
+│           └── popup.js        # Módulo de popup
 │       └── script.js           # Script principal
 ├── pages                       # Páginas do site
 │   ├── erro.html               # Página de erro
