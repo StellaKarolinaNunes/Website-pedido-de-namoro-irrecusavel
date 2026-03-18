@@ -83,10 +83,10 @@ A solução consiste em uma interface web lúdica que utiliza JavaScript para cr
 ## Layout da Aplicação 
 
 <p align="center">
-  <img src="image.png" width="24%" alt="tela_principal" />
-  <img src="image-1.png" width="24%" alt="tela_sim" />
-  <img src="image-2.png" width="24%" alt="tela_não" />
-  <img src="image-3.png" width="24%" alt="tela_erro" />
+  <img src="./assets/image/tela_principal.png" width="24%" alt="tela_principal" />
+  <img src="./assets/image/tela_sim.png" width="24%" alt="tela_sim" />
+  <img src="./assets/image/tela_não.png" width="24%" alt="tela_não" />
+  <img src="./assets/image/tela_erro.png" width="24%" alt="tela_erro" />
 </p>
 
  <br>
