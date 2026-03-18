@@ -1,88 +1,231 @@
-<h1 align="left"> Website-pedido-de-namoro-irrecusavel </h1>
+  <h1 align="center">
+       Pedido de Namoro Irrecusável
+    <br />
+    <br />
+  <a href="https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel">
+     <img src="https://github.com/user-attachments/assets/23da5a42-9728-4c46-bf89-b37ce2affeef " alt="Pedido de Namoro Irrecusável Banner " width="100%">
+    </a>
+  </h1>
 
-<p align="left">
-  <img src="https://img.shields.io/static/v1?label=html&message=framework&color=blue&style=for-the-badge&logo=html"/>
-    <img src="https://img.shields.io/static/v1?label=css&message=framework&color=blue&style=for-the-badge&logo=css"/>
-      <img src="https://img.shields.io/static/v1?label=js&message=framework&color=blue&style=for-the-badge&logo=js"/>
-  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
-  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E1.0&color=GREEN&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+ </div>
+ 
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge"/>
 </p>
 
-<p style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/23da5a42-9728-4c46-bf89-b37ce2affeef" width="1000" />
+<br>
+
+ ---
+
+##  Introdução
+
+Este projeto é uma aplicação web interativa projetada para transformar o clássico pedido de namoro em uma jornada digital inesquecível. Com um design elegante, animações fluidas e uma abordagem divertida (incluindo o famoso botão "Não" que foge do cursor), o site garante uma experiência emocionante e, claro, um "Sim" garantido!
+
+<br>
+
+## Por que "Pedido de Namoro Irrecusável"?
+
+O nome "Pedido de Namoro Irrecusável" foi escolhido para refletir a natureza divertida e confiante do projeto. A ideia é criar uma experiência tão envolvente e charmosa que a decisão de dizer "sim" se torne inevitável, combinando romance com um toque de humor e tecnologia moderna.
+
+<br>
+
+## A Solução
+
+A solução consiste em uma interface web lúdica que utiliza JavaScript para criar uma interação onde o botão "Não" se esquiva do usuário, tornando o "Sim" a única opção prática e divertida, removendo a pressão do momento e substituindo-a por sorrisos.
+
+<br>
+
+## Funcionalidades Principais
+
+*  **Botão Fujão**: Lógica em JavaScript que move o botão "Não" aleatoriamente quando o cursor se aproxima.
+*  **Design Responsivo**: Interface totalmente adaptável para dispositivos móveis e desktops.
+*  **Feedback Visual**: Animações suaves e transições que tornam a experiência fluida.
+*  **Confirmação Interativa**: Uma tela de sucesso personalizada ao clicar no botão "Sim".
+<br>
+
+>  **Fluxograma do Projeto**: Caso queira entender a lógica de navegação e processos do aplicativo, acesse o arquivo [FLUXOGRAMA.md](FLUXOGRAMA.md).
+
+
+ ---
+
+##  Estrutura de Pastas
+
+```text
+.
+├── assets                      # Arquivos de mídia e estilos
+│   ├── css                     # Arquivos de estilos
+│   │   ├── erro.css            # Estilos da página de erro
+│   │   ├── style.css           # Estilos da página principal
+│   │   └── teamo.css           # Estilos da página de sucesso
+│   ├── image                   # Arquivos de imagens
+│   │   ├── bug-outline.svg     # Ícone de bug
+│   │   ├── cat.png             # Imagem de gato
+│   │   ├── deploy.png          # Imagem de deploy
+│   │   ├── favicon.ico         # Ícone do site
+│   │   ├── Frame 10.svg        # Ícone de frame
+│   │   └── love3.png           # Imagem de amor
+│   └── js                      # Arquivos de JavaScript
+│       └── script.js           # Script principal
+├── pages                       # Páginas do site
+│   ├── erro.html               # Página de erro
+│   ├── index.html              # Página principal
+│   └── teamo.html              # Página de sucesso
+├── LICENSE                     # Licença do projeto
+└── README.md                   # README do projeto
+```
+
+ <br>
+
+## Layout da Aplicação 
+
+<p align="center">
+  <img src="image.png" width="24%" alt="tela_principal" />
+  <img src="image-1.png" width="24%" alt="tela_sim" />
+  <img src="image-2.png" width="24%" alt="tela_não" />
+  <img src="image-3.png" width="24%" alt="tela_erro" />
 </p>
 
-> Status do Projeto: :heavy_check_mark:concluido
+ <br>
 
-### Tópicos
+## Link Projeto online
 
-:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
+<a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/" target="_blank"> <img src="./assets/image/deploy.png" width="900" alt="Website-pedido-de-namoro-irrecusavel 🤝"> </a>
 
-:small_blue_diamond: [Funcionalidades](#funcionalidades)
+ <br>
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+## Instalação
 
-:small_blue_diamond: [FAQ/Perguntas-Frequentes](#FAQ/Perguntas-Frequentes)
+### Pré-requisitos para Rodar o projeto
 
-:small_blue_diamond: [Contributing/Contribuir](#Contributing/Contribuir)
+*  **Navegador Moderno:** (Google Chrome, Firefox, Edge, Safari, etc.)
+*  **Editor de Código (Opcional):** Caso queira editar  
+*  **Git (Opcional):** Para clonar o repositório.
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação)
+<br>
 
-:small_blue_diamond: [License/Licença do Projeto](#License/Licença-Projeto)
+###  Tecnologias Utilizadas
 
-:small_blue_diamond: [Equipe handhelp](#Equipe)
+O projeto foi construído utilizando as seguintes tecnologias fundamentais:
 
-## Descrição-do-projeto
+*   **HTML5**: Para a estruturação semântica e acessível do conteúdo.
+*   **CSS3**: Para animações interativas, layout flexível (Flexbox), glassmorphism e cores vibrantes.
+*   **JavaScript (Vanilla)**: Responsável pela lógica da aplicação, como o botão que se esquiva do usuário e o controle do modal.
+*   **Google Fonts**: Utilizado para garantir uma tipografia elegante e moderna em todo o site.
 
-<p align="justify">
-  Este projeto é uma aplicação web que simula um pedido de namoro virtual através de um jogo interativo. O objetivo é proporcionar aos usuários uma experiência divertida e emocionante ao expressar seus sentimentos de uma maneira única e memorável.
-  </p>
-  
- Posso gerar meu próprio guia usando esse repositório ?  
- **R:** Sim! Só pedimos que você faça um link para [Link do Website-pedido-de-namoro-irrecusavel](https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel/edit/main/README.md)  😁 e respeite a licença de uso.
+<br>
 
-## Funcionalidades
+### Instalação Rápida
 
-:heavy_check_mark: Personalização do pedido de namoro virtual, incluindo escolha de local, momento e forma de expressar os sentimentos.
+#### 1. Clone o repositório:
 
-## Layout ou Deploy da Aplicação :dash:
+   ```bash
+   git clone https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel
+   ```
 
-> **Telas**
+#### 2. Navegue até o diretório do projeto:
 
-![image](https://github.com/user-attachments/assets/23da5a42-9728-4c46-bf89-b37ce2affeef)
+   ```bash
+   cd Website-pedido-de-namoro-irrecusavel
+   ```
 
-![image](https://github.com/user-attachments/assets/0e0e5f2f-eda8-49c0-b590-292d07637530)
+#### 3. Abra o arquivo `index.html` em seu navegador de preferência.
 
-![image](https://github.com/user-attachments/assets/4abb8332-e288-4583-b39e-13ccd15f0398)
+<br>
 
-![image](https://github.com/user-attachments/assets/676a75b5-9cbb-4fea-a0b0-2e0530843269)
+## Roadmap
 
+### v1.1.0 (Efeitos & Imersão)
+- [ ] **Trilha Sonora**: Adicionar uma música de fundo romântica ao carregar a página de sucesso.
+- [ ] **Efeito de Confetes**: Implementar `Canvas Confetti` para celebrar o clique no botão "Sim".
+- [ ] **Animações Extras**: Adicionar corações flutuantes mais dinâmicos no fundo.
 
-## **Link Projeto online**
+### v1.2.0 (Personalização Dinâmica)
+- [ ] **Parâmetros de URL**: Permitir que o usuário passe o nome da pessoa via URL (ex: `?nome=Julia`).
+- [ ] **Mensagem Customizada**: Opção de alterar o texto do pedido através da URL.
+- [ ] **Galeria de Fotos**: Espaço para carregar fotos do casal na página de sucesso.
 
-> **click imagem** <a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/" target="_blank"> <img src="https://github.com/StellaKarolinaNunes/Projeto_Integrador_Handhelp/assets/118007989/2373027a-365f-4463-83c4-b84258d97d80" width="300" alt="Website-pedido-de-namoro-irrecusavel 🤝"> </a>
+### v2.0.0 (Interatividade Avançada)
+- [ ] **Dashboard de Configuração**: Interface simples para gerar links personalizados sem mexer no código.
+- [ ] **Contagem Regressiva**: Adicionar um contador de "tempo juntos" após o aceite.
+- [ ] **Integração com WhatsApp**: Botão para notificar o autor do pedido assim que o "Sim" for clicado.
 
-## Posso sugerir novas funcionalidades?
+<br>
 
-> **R:** Sim! Use o mecanismo de contribuição do Github. Nesse momento estamos focados em corrigir erros e melhorar as funcionalidade existentes.
+## Contribuição
 
-## Contribuir
+Contribuições são muito bem-vindas para tornar este projeto ainda mais especial!
 
-> **R:** Esse é um projeto handhelp feito pela Equipe Help Five para a comunidade e contribuições são bem vindas. Para aumentar a chance de a sua contribuição ser aprovada, escolha um título legal, simples e explicativo para os itens, e siga a formatação correta dos arquivos.
+### Como Contribuir
+1. **Fork** este repositório
+2. **Clone** seu fork localmente
+3. **Crie** uma branch para sua feature: `git checkout -b feature/nova-funcionalidade`
+4. **Faça** suas alterações e commits
+5. **Teste** suas modificações
+6. **Abra** um Pull Request detalhado
 
-## Desenvolvedores/Contribuintes :octocat:
+<br>
 
-Programação:
+###  Diretrizes
 
-| [<img src= "https://github.com/StellaKarolinaNunes.png" width=115><br><sub>Stella Karolina Nunes</sub>](https://github.com/StellaKarolinaNunes)
-| :---: |
+- Código limpo e bem comentado
+- Mensagens de commit claras e objetivas
+- Teste todas as funcionalidades
+- Mantenha a documentação atualizada
+- Siga os padrões de código existentes
 
-## Licença do Projeto
+<br>
 
-## Licença
+##  Licença
 
-The [MIT License](./License) (MIT)
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-#
+``` bash
+MIT License - você pode usar, modificar e distribuir livremente,
+mantendo a referência ao repositório original.
+```
+
+ <br>
+
+ ## Contato
+
+ Se você tiver dúvidas, sugestões ou quiser saber mais sobre o projeto, entre em contato:
+
+ - **Principais Desenvolvedores:** [Stella Karolina](https://github.com/StellaKarolinaNunes)
+ - **Repositório:** [Pedido de namoro irrecusável no GitHub](https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel)
+ - **LinkedIn:** [Stella Karolina Nunes](https://www.linkedin.com/in/stella-karolina/)
+
+ <br>
+
+ ## Créditos
+
+ O **Pedido de namoro irrecusável** foi construído com o apoio de tecnologias e comunidades incríveis:
+
+ - **Tipografia:** [Google Fonts](https://fonts.google.com/) (Poppins, Abril Fatface, Dancing Script).
+ - **Estilização:** CSS Premium inspirado em tendências de *Glassmorphism* e *Neumorphism*.
+ - **Lógica:** Vanilla JavaScript puro, sem dependências externas.
+ - **Hospedagem:** [Netlify](https://www.netlify.com/) (Deploy rápido e contínuo).
+ - **IA de Codificação:** Desenvolvido com suporte do **Antigravity**, o assistente digital agentic de codificação do Google Deepmind.
+
+ <br>
+
+ 
+### Desenvolvimento Principal
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/StellaKarolinaNunes">
+        <img src="https://github.com/StellaKarolinaNunes.png" width="100px" alt="Stella Karolina"/>
+        <br />
+        <sub><b>Stella Karolina (Desenvolvedora)</b></sub>
+        <br />
+      </a>
+    </td>
+  </tr>
+</table>
+
+ 

@@ -1,92 +1,122 @@
-  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Abril+Fatface&family=Dancing+Script:wght@700&display=swap');
 
-        *::selection {
-            background: linear-gradient(to right, #030001, #ffafbd, #ffc3a0);
-            color: #fff;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(to right, #030001, #ffafbd, #ffc3a0);
-        }
+*::selection {
+    background: #ffb6c1;
+    color: #fff;
+}
 
-        .container {
-            position: relative;
-            width: 600px;
-            height: 400px;
-            background: #fff;
-            border-radius: 40px;
-            display: flex;
-            justify-content: center; 
-            align-items: center;     
-            flex-direction: column;  
-        }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #030001, #ffafbd, #ffc3a0);
+    padding: 20px;
+    overflow-x: hidden;
+}
 
-        .te-amo {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 60px;
-            color: rgb(84, 8, 17);
-            text-align: center; 
-            margin-bottom: 20px; 
-        }
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-out;
+}
 
-        .heart {
-            width: 100px;
-            height: 160px;
-            position: relative;
-            background-color: #470c0c;
-            transform-origin: center bottom;
-            border-radius: 15px;
-            animation: heart 3s ease infinite alternate;
-        }
 
-        @keyframes heart {
-            0% {
-                transform: rotate(0deg);
-            }
-            50% {
-                transform: rotate(45deg);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-            100% {
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-                transform: rotate(45deg);
-            }
-        }
 
-        .heart:after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            transform-origin: left bottom;
-            background-color: #470c0c;
-            position: absolute;
-            animation: heart_after 3s ease infinite alternate;
-        }
+.title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 70px;
+    color: #dc2960;
+    margin-bottom: 10px;
+    line-height: 1;
+}
 
-        @keyframes heart_after {
-            0% {
-                transform: rotate(0deg);
-            }
-            50% {
-                transform: rotate(-90deg) translateY(100px);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-            100% {
-                transform: rotate(-90deg) translateY(100px);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-        }
+.subtitle {
+    font-size: 24px;
+    color: #1c050c;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #d5006d;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.quote::before,
+.quote::after {
+    content: '"';
+    font-size: 40px;
+    opacity: 0.3;
+}
+
+.message-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.final-word {
+    font-size: 26px;
+    font-weight: 600;
+    color: #dc2960;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .quote {
+        font-size: 22px;
+    }
+
+    .message-text {
+        font-size: 16px;
+    }
+}

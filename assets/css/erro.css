@@ -1,37 +1,139 @@
-body {
-  background: #030001;
-  color: #ffb6c1;
-  font-family: monospace;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Abril+Fatface&display=swap');
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #030001, #ffafbd, #ffc3a0);
+  overflow: hidden;
+  position: relative;
 }
 
-h1,
-h2 {
-  margin: 10px 0;
+/* Background floating hearts simulation */
+body::before {
+  content: "❤";
+  position: absolute;
+  font-size: 200px;
+  color: rgba(255, 192, 203, 0.1);
+  top: -50px;
+  left: -50px;
+  transform: rotate(-15deg);
+  z-index: 0;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-.erro-code {
-  font-size: 8rem;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-  font-size: 1.5rem;
+body::after {
+  content: "❤";
+  position: absolute;
+  font-size: 150px;
+  color: rgba(255, 192, 203, 0.1);
+  bottom: -30px;
+  right: -30px;
+  transform: rotate(20deg);
+  z-index: 0;
 }
 
 .container {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 50px 30px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.erro-code {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 100px;
+  background: linear-gradient(45deg, #dc2960, #ff2f6f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 1;
+  filter: drop-shadow(0 5px 15px rgba(220, 41, 96, 0.3));
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 28px;
+  color: #1c050c;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 18px;
+  color: #555;
+  font-weight: 400;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.broken-heart {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #ff2f6f;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 10px 20px rgba(255, 47, 111, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(255, 47, 111, 0.4);
+  background-color: #dc2960;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .erro-code {
+    font-size: 80px;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
 }
