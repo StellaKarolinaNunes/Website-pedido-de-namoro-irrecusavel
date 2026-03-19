@@ -55,7 +55,7 @@ A solução consiste em uma interface web lúdica que utiliza JavaScript para cr
 ##  Estrutura de Pastas
 
 ```text
-.
+
 ├── assets                      # Arquivos de mídia e estilos
 │   ├── css                     # Arquivos de estilos
 │   │   ├── base.css            # Estilos base
