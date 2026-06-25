@@ -1,237 +1,401 @@
-  <h1 align="center">
-       Pedido de Namoro Irrecusável
-    <br />
-    <br />
-  <a href="https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel">
-     <img src="./assets/image/tela_principal.png " alt="Pedido de Namoro Irrecusável Banner " width="100%">
-    </a>
-  </h1>
+<div align="center">
 
- </div>
- 
+# Pedido de Namoro Irrecusável
+
+### Experiência web interativa para transformar um pedido de namoro em uma surpresa digital divertida e personalizada
+
+<a href="https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel">
+  <img src="./assets/image/tela_principal.png" alt="Banner do projeto Pedido de Namoro Irrecusável" width="100%">
+</a>
+
+<br>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+
+<img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify">
+
+<img src="https://img.shields.io/badge/Status-Concluído-2EA44F?style=for-the-badge" alt="Status do projeto">
+
+<br><br>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge"/>
+  <a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/">
+    <img src="https://img.shields.io/badge/▶%20Acessar%20Projeto%20Online-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Acessar Projeto Online">
+  </a>
+  <a href="https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel">
+    <img src="https://img.shields.io/badge/⌘%20Explorar%20Código--Fonte-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explorar Código-Fonte">
+  </a>
+  <a href="./FLUXOGRAMA.md">
+    <img src="https://img.shields.io/badge/◈%20Ver%20Fluxograma-7C3AED?style=for-the-badge" alt="Ver Fluxograma">
+  </a>
 </p>
 
-<br>
+</div>
 
- ---
+---
 
-##  Introdução
+## Sobre o projeto
 
-Este projeto é uma aplicação web interativa projetada para transformar o clássico pedido de namoro em uma jornada digital inesquecível. Com um design elegante, animações fluidas e uma abordagem divertida (incluindo o famoso botão "Não" que foge do cursor), o site garante uma experiência emocionante e, claro, um "Sim" garantido!
+O **Pedido de Namoro Irrecusável** é uma aplicação web interativa criada para transformar um pedido de namoro em uma experiência digital divertida, afetiva e memorável.
 
-<br>
+A interface apresenta uma pergunta principal com duas opções: **Sim** e **Não**. Enquanto o botão de confirmação direciona para uma página especial de sucesso, o botão “Não” utiliza JavaScript para se mover pela tela quando o usuário tenta selecioná-lo.
 
-## Por que "Pedido de Namoro Irrecusável"?
+O projeto combina romance, humor, animações e interação para criar uma surpresa personalizada que pode ser compartilhada por meio de um link.
 
-O nome "Pedido de Namoro Irrecusável" foi escolhido para refletir a natureza divertida e confiante do projeto. A ideia é criar uma experiência tão envolvente e charmosa que a decisão de dizer "sim" se torne inevitável, combinando romance com um toque de humor e tecnologia moderna.
+> Este projeto foi desenvolvido para fins de estudo, portfólio e demonstração de interações web utilizando HTML, CSS e JavaScript puro.
 
-<br>
+---
 
-## A Solução
+## Objetivo
 
-A solução consiste em uma interface web lúdica que utiliza JavaScript para criar uma interação onde o botão "Não" se esquiva do usuário, tornando o "Sim" a única opção prática e divertida, removendo a pressão do momento e substituindo-a por sorrisos.
+O objetivo do projeto é demonstrar como tecnologias fundamentais da web podem ser utilizadas para criar uma experiência interativa, responsiva e emocionalmente envolvente.
 
-<br>
+A aplicação trabalha conceitos como:
 
-## Funcionalidades Principais
+* estruturação de páginas HTML;
+* estilização com CSS;
+* responsividade;
+* animações e transições;
+* manipulação de eventos;
+* movimentação dinâmica de elementos;
+* navegação entre páginas;
+* organização modular de JavaScript;
+* publicação de site estático.
 
-*  **Botão Fujão**: Lógica em JavaScript que move o botão "Não" aleatoriamente quando o cursor se aproxima.
-*  **Design Responsivo**: Interface totalmente adaptável para dispositivos móveis e desktops.
-*  **Feedback Visual**: Animações suaves e transições que tornam a experiência fluida.
-*  **Confirmação Interativa**: Uma tela de sucesso personalizada ao clicar no botão "Sim".
-<br>
+---
 
->  **Fluxograma do Projeto**: Caso queira entender a lógica de navegação e processos do aplicativo, acesse o arquivo [FLUXOGRAMA.md](FLUXOGRAMA.md).
+## Funcionalidades
 
+* **Pedido interativo:** página principal com pergunta personalizada.
+* **Botão “Sim”:** direciona o usuário para uma página especial de confirmação.
+* **Botão “Não” fujão:** move-se aleatoriamente quando o cursor se aproxima.
+* **Animações visuais:** efeitos suaves para tornar a experiência mais envolvente.
+* **Corações dinâmicos:** elementos visuais decorativos para reforçar a identidade romântica.
+* **Pop-up interativo:** recursos visuais para aumentar a surpresa durante a navegação.
+* **Página de sucesso:** tela especial exibida após a confirmação.
+* **Página alternativa de erro:** fluxo visual para situações específicas do projeto.
+* **Layout responsivo:** adaptação para celulares, tablets e computadores.
+* **Publicação online:** versão hospedada no Netlify.
+* **Código modularizado:** scripts divididos entre lógica principal, corações e pop-ups.
 
- ---
+---
 
-##  Estrutura de Pastas
+## Tecnologias utilizadas
+
+| Tecnologia   | Aplicação no projeto                                     |
+| ------------ | -------------------------------------------------------- |
+| HTML5        | Estrutura das páginas e conteúdo                         |
+| CSS3         | Estilização, responsividade, animações e efeitos visuais |
+| JavaScript   | Interações, botão fujão, pop-ups e lógica de navegação   |
+| Google Fonts | Tipografia personalizada                                 |
+| Netlify      | Publicação da versão online                              |
+| Git          | Controle de versão                                       |
+| GitHub       | Hospedagem do repositório                                |
+
+---
+
+## Destaques técnicos
+
+* Aplicação web sem dependência de frameworks;
+* Interação dinâmica criada com JavaScript puro;
+* Botão “Não” com posicionamento aleatório;
+* Estrutura multipágina com fluxo visual de confirmação;
+* Organização de estilos por página e responsabilidade;
+* JavaScript separado por módulos;
+* Interface responsiva para diferentes dispositivos;
+* Publicação simples como site estático;
+* Projeto leve e fácil de personalizar.
+
+---
+
+## Fluxo de funcionamento
 
 ```text
-
-├── assets                      # Arquivos de mídia e estilos
-│   ├── css                     # Arquivos de estilos
-│   │   ├── base.css            # Estilos base
-│   │   ├── erro.css            # Estilos da página de erro
-│   │   ├── style.css           # Estilos da página principal
-│   │   └── teamo.css           # Estilos da página de sucesso
-│   ├── image                   # Arquivos de imagens
-│   │   ├── deploy.png          # Imagem de deploy
-│   │   ├── favicon.ico         # Ícone do site
-│   │   ├── Frame 10.svg        # Ícone de frame
-│   │   ├── love3.png           # Imagem de amor
-│   │   └── tela_erro.png       # Imagem da página de erro
-│   │   └── tela_nao.png        # Imagem da página de não
-│   │   └── tela_sim.png        # Imagem da página de sim
-│   │   └── tela_principal.png  # Imagem da página principal
-│   └── js                      # Arquivos de JavaScript
-│       └── modules             # Módulos de JavaScript
-│           └── heart.js        # Módulo de coração
-│           └── popup.js        # Módulo de popup
-│       └── script.js           # Script principal
-├── pages                       # Páginas do site
-│   ├── erro.html               # Página de erro
-│   ├── index.html              # Página principal
-│   └── teamo.html              # Página de sucesso
-├── LICENSE                     # Licença do projeto
-└── README.md                   # README do projeto
+Usuário acessa o site
+        │
+        ▼
+Pergunta principal exibida
+        │
+        ├── Clica em "Sim"
+        │        │
+        │        ▼
+        │   Página de confirmação
+        │
+        └── Tenta clicar em "Não"
+                 │
+                 ▼
+        Botão muda de posição
+                 │
+                 ▼
+        Usuário continua interagindo
 ```
 
- <br>
+> Para entender a lógica detalhada do projeto, consulte o arquivo [FLUXOGRAMA.md](./FLUXOGRAMA.md).
 
-## Layout da Aplicação 
+---
 
-<p align="center">
-  <img src="./assets/image/tela_principal.png" width="24%" alt="tela_principal" />
-  <img src="./assets/image/tela_sim.png" width="24%" alt="tela_sim" />
-  <img src="./assets/image/tela_não.png" width="24%" alt="tela_não" />
-  <img src="./assets/image/tela_erro.png" width="24%" alt="tela_erro" />
-</p>
+## Preview
 
- <br>
+<div align="center">
 
-## Link Projeto online
-
-<a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/" target="_blank"> <img src="./assets/image/deploy.png" width="900" alt="Website-pedido-de-namoro-irrecusavel 🤝"> </a>
-
- <br>
-
-## Instalação
-
-### Pré-requisitos para Rodar o projeto
-
-*  **Navegador Moderno:** (Google Chrome, Firefox, Edge, Safari, etc.)
-*  **Editor de Código (Opcional):** Caso queira editar  
-*  **Git (Opcional):** Para clonar o repositório.
+| Tela principal                                                                                                  | Confirmação                                                                              |
+| --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| <img src="./assets/image/tela_principal.png" alt="Tela principal do Pedido de Namoro Irrecusável" width="100%"> | <img src="./assets/image/tela_sim.png" alt="Tela de confirmação do pedido" width="100%"> |
 
 <br>
 
-###  Tecnologias Utilizadas
+| Botão Não                                                                          | Página alternativa                                                                        |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| <img src="./assets/image/tela_não.png" alt="Interação com botão Não" width="100%"> | <img src="./assets/image/tela_erro.png" alt="Página alternativa do projeto" width="100%"> |
 
-O projeto foi construído utilizando as seguintes tecnologias fundamentais:
+</div>
 
-*   **HTML5**: Para a estruturação semântica e acessível do conteúdo.
-*   **CSS3**: Para animações interativas, layout flexível (Flexbox), glassmorphism e cores vibrantes.
-*   **JavaScript (Vanilla)**: Responsável pela lógica da aplicação, como o botão que se esquiva do usuário e o controle do modal.
-*   **Google Fonts**: Utilizado para garantir uma tipografia elegante e moderna em todo o site.
+---
 
-<br>
+## Projeto online
 
-### Instalação Rápida
+<div align="center">
 
-#### 1. Clone o repositório:
+<a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/">
+  <img src="./assets/image/deploy.png" width="100%" alt="Demonstração online do Pedido de Namoro Irrecusável">
+</a>
 
-   ```bash
-   git clone https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel
-   ```
+<br><br>
 
-#### 2. Navegue até o diretório do projeto:
+<a href="https://website-pedido-de-namoro-irrecusavel.netlify.app/">
+  <img src="https://img.shields.io/badge/Acessar%20demonstração%20online-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Acessar demonstração online">
+</a>
 
-   ```bash
-   cd Website-pedido-de-namoro-irrecusavel
-   ```
+</div>
 
-#### 3. Abra o arquivo `index.html` em seu navegador de preferência.
+---
 
-<br>
+## Estrutura do projeto
+
+```bash
+Website-pedido-de-namoro-irrecusavel/
+├── assets/
+│   ├── css/
+│   │   ├── base.css
+│   │   ├── erro.css
+│   │   ├── style.css
+│   │   └── teamo.css
+│   │
+│   ├── image/
+│   │   ├── deploy.png
+│   │   ├── favicon.ico
+│   │   ├── Frame 10.svg
+│   │   ├── love3.png
+│   │   ├── tela_erro.png
+│   │   ├── tela_nao.png
+│   │   ├── tela_principal.png
+│   │   └── tela_sim.png
+│   │
+│   └── js/
+│       ├── modules/
+│       │   ├── heart.js
+│       │   └── popup.js
+│       │
+│       └── script.js
+│
+├── pages/
+│   ├── erro.html
+│   ├── index.html
+│   └── teamo.html
+│
+├── FLUXOGRAMA.md
+├── LICENSE
+└── README.md
+```
+
+### Responsabilidade dos arquivos
+
+| Arquivo ou pasta             | Responsabilidade                       |
+| ---------------------------- | -------------------------------------- |
+| `pages/index.html`           | Página principal do pedido             |
+| `pages/teamo.html`           | Página exibida após a confirmação      |
+| `pages/erro.html`            | Página alternativa do fluxo            |
+| `assets/css/style.css`       | Estilos da página principal            |
+| `assets/css/teamo.css`       | Estilos da página de confirmação       |
+| `assets/css/erro.css`        | Estilos da página alternativa          |
+| `assets/js/script.js`        | Lógica principal da interação          |
+| `assets/js/modules/heart.js` | Criação e animação de corações         |
+| `assets/js/modules/popup.js` | Controle dos pop-ups do projeto        |
+| `FLUXOGRAMA.md`              | Fluxo e documentação lógica do sistema |
+
+---
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+Antes de iniciar, é necessário ter instalado:
+
+* navegador atualizado, como Google Chrome, Firefox, Microsoft Edge ou Safari;
+* Git, para clonar o repositório;
+* editor de código opcional, como VS Code;
+* extensão Live Server opcional para desenvolvimento local.
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel.git
+```
+
+### 2. Acesse a pasta do projeto
+
+```bash
+cd Website-pedido-de-namoro-irrecusavel
+```
+
+### 3. Abra a página principal
+
+Como o arquivo `index.html` está dentro da pasta `pages`, abra:
+
+```bash
+xdg-open pages/index.html
+```
+
+No macOS:
+
+```bash
+open pages/index.html
+```
+
+No Windows:
+
+```bash
+start pages/index.html
+```
+
+---
+
+## Executar com Live Server
+
+Para uma experiência de desenvolvimento mais prática no VS Code:
+
+1. Instale a extensão **Live Server**;
+2. Abra a pasta do projeto no VS Code;
+3. Abra o arquivo `pages/index.html`;
+4. Clique com o botão direito;
+5. Selecione **Open with Live Server**.
+
+---
 
 ## Roadmap
 
-### v1.1.0 (Efeitos & Imersão)
-- [ ] **Trilha Sonora**: Adicionar uma música de fundo romântica ao carregar a página de sucesso.
-- [ ] **Efeito de Confetes**: Implementar `Canvas Confetti` para celebrar o clique no botão "Sim".
-- [ ] **Animações Extras**: Adicionar corações flutuantes mais dinâmicos no fundo.
+### Experiência e imersão
 
-### v1.2.0 (Personalização Dinâmica)
-- [ ] **Parâmetros de URL**: Permitir que o usuário passe o nome da pessoa via URL (ex: `?nome=Julia`).
-- [ ] **Mensagem Customizada**: Opção de alterar o texto do pedido através da URL.
-- [ ] **Galeria de Fotos**: Espaço para carregar fotos do casal na página de sucesso.
+* [x] Página principal interativa;
+* [x] Botão “Não” com movimento dinâmico;
+* [x] Página de confirmação;
+* [x] Animações e elementos visuais românticos;
+* [x] Layout responsivo;
+* [x] Deploy no Netlify;
+* [ ] Adicionar música de fundo opcional;
+* [ ] Criar efeito de confetes ao clicar em “Sim”;
+* [ ] Adicionar mais animações de corações no fundo;
+* [ ] Criar transições entre páginas.
 
-### v2.0.0 (Interatividade Avançada)
-- [ ] **Dashboard de Configuração**: Interface simples para gerar links personalizados sem mexer no código.
-- [ ] **Contagem Regressiva**: Adicionar um contador de "tempo juntos" após o aceite.
-- [ ] **Integração com WhatsApp**: Botão para notificar o autor do pedido assim que o "Sim" for clicado.
+### Personalização
 
-<br>
+* [ ] Permitir alterar o nome da pessoa por URL;
+* [ ] Permitir personalizar a mensagem principal;
+* [ ] Adicionar galeria de fotos do casal;
+* [ ] Criar opção de editar cores e tipografia;
+* [ ] Criar diferentes modelos de pedido;
+* [ ] Permitir incluir data especial no pedido.
+
+### Evoluções futuras
+
+* [ ] Criar painel visual para gerar links personalizados;
+* [ ] Adicionar contador de tempo juntos;
+* [ ] Integrar envio de confirmação via WhatsApp;
+* [ ] Criar versão PWA instalável;
+* [ ] Adicionar modo escuro;
+* [ ] Criar página com QR Code para compartilhar o pedido;
+* [ ] Salvar personalizações no navegador com `localStorage`.
+
+---
 
 ## Contribuição
 
-Contribuições são muito bem-vindas para tornar este projeto ainda mais especial!
+Contribuições são bem-vindas para tornar o projeto mais criativo, responsivo e personalizável.
 
-### Como Contribuir
-1. **Fork** este repositório
-2. **Clone** seu fork localmente
-3. **Crie** uma branch para sua feature: `git checkout -b feature/nova-funcionalidade`
-4. **Faça** suas alterações e commits
-5. **Teste** suas modificações
-6. **Abra** um Pull Request detalhado
+```bash
+# Faça um fork do repositório no GitHub
 
-<br>
+# Clone o seu fork
+git clone https://github.com/SEU-USUARIO/Website-pedido-de-namoro-irrecusavel.git
 
-###  Diretrizes
+# Acesse a pasta do projeto
+cd Website-pedido-de-namoro-irrecusavel
 
-- Código limpo e bem comentado
-- Mensagens de commit claras e objetivas
-- Teste todas as funcionalidades
-- Mantenha a documentação atualizada
-- Siga os padrões de código existentes
+# Crie uma branch para sua alteração
+git checkout -b feature/nova-funcionalidade
 
-<br>
+# Faça as alterações e teste no navegador
 
-##  Licença
+# Adicione os arquivos alterados
+git add .
+
+# Crie um commit descritivo
+git commit -m "feat: adiciona novo efeito visual"
+
+# Envie a branch para o GitHub
+git push origin feature/nova-funcionalidade
+```
+
+Depois, abra um Pull Request explicando:
+
+* o objetivo da alteração;
+* quais arquivos foram modificados;
+* como a funcionalidade foi testada;
+* se houve alteração visual ou de responsividade;
+* se foram adicionadas novas imagens, fontes ou scripts.
+
+### Diretrizes
+
+* Mantenha o código organizado e legível;
+* Preserve a separação entre HTML, CSS e JavaScript;
+* Evite adicionar dependências externas sem necessidade;
+* Teste o comportamento em desktop e celular;
+* Mantenha as animações leves;
+* Preserve o funcionamento do botão interativo;
+* Otimize imagens antes de adicioná-las ao repositório;
+* Atualize o README quando novas funcionalidades forem incluídas.
+
+---
+
+## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-``` bash
-MIT License - você pode usar, modificar e distribuir livremente,
-mantendo a referência ao repositório original.
+```text
+MIT License
+
+Você pode usar, modificar e distribuir este projeto,
+desde que mantenha os créditos e a referência ao repositório original.
 ```
 
- <br>
+---
 
- ## Contato
+## Créditos
 
- Se você tiver dúvidas, sugestões ou quiser saber mais sobre o projeto, entre em contato:
+### Desenvolvimento
 
- - **Principais Desenvolvedores:** [Stella Karolina](https://github.com/StellaKarolinaNunes)
- - **Repositório:** [Pedido de namoro irrecusável no GitHub](https://github.com/StellaKarolinaNunes/Website-pedido-de-namoro-irrecusavel)
- - **LinkedIn:** [Stella Karolina Nunes](https://www.linkedin.com/in/stella-karolina/)
+* **Desenvolvimento principal:** [Stella Karolina Nunes](https://github.com/StellaKarolinaNunes)
 
- <br>
+### Tecnologias e recursos
 
- ## Créditos
-
- O **Pedido de namoro irrecusável** foi construído com o apoio de tecnologias e comunidades incríveis:
-
- - **Tipografia:** [Google Fonts](https://fonts.google.com/) (Poppins, Abril Fatface, Dancing Script).
- - **Estilização:** CSS Premium inspirado em tendências de *Glassmorphism* e *Neumorphism*.
- - **Lógica:** Vanilla JavaScript puro, sem dependências externas.
- - **Hospedagem:** [Netlify](https://www.netlify.com/) (Deploy rápido e contínuo).
- - **IA de Codificação:** Desenvolvido com suporte do **Antigravity**, o assistente digital agentic de codificação do Google Deepmind.
-
- <br>
-
- 
-### Desenvolvimento Principal
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/StellaKarolinaNunes">
-        <img src="https://github.com/StellaKarolinaNunes.png" width="100px" alt="Stella Karolina"/>
-        <br />
-        <sub><b>Stella Karolina (Desenvolvedora)</b></sub>
-        <br />
-      </a>
-    </td>
-  </tr>
-</table>
-
- 
+* **Estrutura:** HTML5;
+* **Estilização:** CSS3;
+* **Interações:** JavaScript puro;
+* **Tipografia:** [Google Fonts](https://fonts.google.com/);
+* **Hospedagem:** [Netlify](https://www.netlify.com/);
+* **Controle de versão:** Git e GitHub;
+* **Badges:** [Shields.io](https://shields.io/).
